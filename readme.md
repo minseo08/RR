@@ -25,7 +25,7 @@ dual_diffusion_rr/
 
 ---
 
-## 💡 Key Idea
+## Key Idea
 
 * Treat mixed image $M$ as a degraded version of both T and R
 * Extend **IR-SDE** (Image Restoration via SDEs) with a **dual-stream architecture**
@@ -33,7 +33,7 @@ dual_diffusion_rr/
 
 ---
 
-## 📦 Dataset
+## Dataset
 
 * **Synthetic**: Generated with paired T and R (from VOC, COCO, etc.)
 * **Nature**: Real-world scenes with natural reflections
@@ -43,7 +43,7 @@ dual_diffusion_rr/
 
 ---
 
-## 🏋️‍♀️ Training
+## Training
 
 ```
 python train.py --config config.yaml
@@ -54,7 +54,7 @@ python train.py --config config.yaml
 
 ---
 
-## 🔍 Inference
+## Inference
 
 ```
 python inference.py --img ./test.jpg --checkpoint ./checkpoints/best.pth
@@ -64,7 +64,7 @@ python inference.py --img ./test.jpg --checkpoint ./checkpoints/best.pth
 
 ---
 
-## ✏️ Notes
+## Notes
 
 * Designed without pretrained weights (fully trainable)
 * Fully supports `Setting 1/2/3` for various reflection definitions
